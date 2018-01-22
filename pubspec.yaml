@@ -2,7 +2,7 @@ name: feedparser
 version: 0.0.1
 description: RSS feed parser.
 authors:
-- Victor Choueiri
+- Victor Choueiri <victor.oc@gmail.com>
 homepage: https://github.com/xqwzts/feedparser
 
 environment:
