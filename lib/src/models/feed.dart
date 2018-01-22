@@ -104,15 +104,16 @@ class Feed {
   }
 
   String toString() {
-    return '''title: $title
+    return '''
+      title: $title
       link: $link
       description: $description
       language: $language
       copyright: $copyright
       pubDate: $pubDate
       lastBuildDate: $lastBuildDate
-      $image
-      $items
+      image: $image
+      items: $items
       ''';
   }
 }

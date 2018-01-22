@@ -38,9 +38,10 @@ class FeedEnclosure {
   }
 
   String toString() {
-    return '''FeedEnclosure:
+    return '''
       url: $url
       length: $length
-      type: $type''';
+      type: $type
+      ''';
   }
 }

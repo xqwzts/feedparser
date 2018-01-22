@@ -30,9 +30,10 @@ class FeedImage {
   }
 
   String toString() {
-    return '''FeedImage:
+    return '''
       url: $url
       width: $width
-      height: $height''';
+      height: $height
+      ''';
   }
 }

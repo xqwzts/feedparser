@@ -99,17 +99,17 @@ class FeedItem {
   }
 
   String toString() {
-    return '''FeedItem:
+    return '''
       title: $title
       link: $link
       description: $description
       author: $author
       category: $category
-      $enclosure
       guid: $guid
       pubDate: $pubDate
       itunes:summary: $itunesSummary
       itunes:duration: $itunesDuration
+      enclosure: $enclosure
       ''';
   }
 }
