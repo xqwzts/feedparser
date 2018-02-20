@@ -11,6 +11,7 @@ class FeedItem {
   final FeedEnclosure enclosure;
   final String guid;
   final String pubDate;
+  final String comments;
   final String itunesSummary;
   final String itunesDuration;
 
@@ -23,6 +24,7 @@ class FeedItem {
     this.enclosure,
     this.guid,
     this.pubDate,
+    this.comments,
     this.itunesSummary,
     this.itunesDuration,
   });
@@ -73,6 +75,11 @@ class FeedItem {
       enclosure = new FeedEnclosure.fromXml(enclosureElement, strict);
     }
 
+    String comments;
+    try {
+      comments = node.findElements('comments').single.text;
+    } catch (e) {}
+
     // itunes fields:
     String itunesSummary;
     try {
@@ -93,6 +100,7 @@ class FeedItem {
       enclosure: enclosure,
       guid: guid,
       pubDate: pubDate,
+      comments: comments,
       itunesSummary: itunesSummary,
       itunesDuration: itunesDuration,
     );
@@ -107,6 +115,7 @@ class FeedItem {
       category: $category
       guid: $guid
       pubDate: $pubDate
+      comments: $comments
       itunes:summary: $itunesSummary
       itunes:duration: $itunesDuration
       enclosure: $enclosure

@@ -198,6 +198,7 @@ void main() {
           <category>itemCategory</category>
           <guid>itemGuid</guid>
           <pubDate>itemPubDate</pubDate>
+          <comments>commentsUrl</comments>
           <itunes:summary>itunesSummary</itunes:summary>
           <itunes:duration>itunesDuration</itunes:duration>
           <enclosure url="enclosureUrl" type="enclosureType" length="enclosureLength"/>
@@ -228,6 +229,7 @@ void main() {
           category: 'itemCategory',
           guid: 'itemGuid',
           pubDate: 'itemPubDate',
+          comments: 'commentsUrl',
           itunesSummary: 'itunesSummary',
           itunesDuration: 'itunesDuration',
           enclosure: new FeedEnclosure(
@@ -259,6 +261,7 @@ void main() {
     expect(result.items[0].category, expected.items[0].category);
     expect(result.items[0].guid, expected.items[0].guid);
     expect(result.items[0].pubDate, expected.items[0].pubDate);
+    expect(result.items[0].comments, expected.items[0].comments);
     expect(result.items[0].itunesSummary, expected.items[0].itunesSummary);
     expect(result.items[0].itunesDuration, expected.items[0].itunesDuration);
     expect(result.items[0].enclosure.url, expected.items[0].enclosure.url);
