@@ -1,5 +1,7 @@
 # feedparser
 [![pub package](https://img.shields.io/pub/v/feedparser.svg)](https://pub.dartlang.org/packages/feedparser) 
+[![Build Status](https://travis-ci.org/xqwzts/feedparser.svg?branch=master)](https://travis-ci.org/xqwzts/feedparser)
+
 
 A Dart library for parsing RSS feeds.
 
